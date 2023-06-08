@@ -1,0 +1,62 @@
+/* Стили для таблицы */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    }
+
+    table th, table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    }
+
+    table th {
+    background-color: #f0f0f0;
+    }
+
+    table tr:first-child th {
+    font-weight: bold;
+    }
+
+  /* Стили для контейнера поиска */
+    #searchContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    }
+
+  /* Стили для поля ввода поиска */
+    #searchInput {
+    margin-right: 10px;
+    padding: 5px;
+    }
+
+  /* Стили для надписей в контейнере поиска */
+    #searchContainer span {
+    margin-right: 10px;
+    }
+
+  /* Стили для выпадающих списков в контейнере поиска */
+    #searchContainer select {
+    padding: 5px;
+    }
+
+  /* Стили для кнопок поиска, просмотра доступности и сброса фильтров */
+    #searchButton, #availabilityButton, #resetButton {
+    padding: 8px 12px;
+    margin-left: 10px;
+    }
+
+  /* Стили для кнопки просмотра доступности */
+#availabilityButton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    }
+
+  /* Стили для кнопки сброса фильтров */
+    #resetButton {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    }
