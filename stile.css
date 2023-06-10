@@ -1,4 +1,4 @@
-/* Стили для таблицы */
+/* Styles for tables */
 table {
     border-collapse: collapse;
     width: 100%;
@@ -18,43 +18,43 @@ table {
     font-weight: bold;
     }
 
-  /* Стили для контейнера поиска */
+  /* Search Container Styles */
     #searchContainer {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
     }
 
-  /* Стили для поля ввода поиска */
+  /* Styles for the search input field */
     #searchInput {
     margin-right: 10px;
     padding: 5px;
     }
 
-  /* Стили для надписей в контейнере поиска */
+  /* Styles for labels in the search container */
     #searchContainer span {
     margin-right: 10px;
     }
 
-  /* Стили для выпадающих списков в контейнере поиска */
+  /* Styles for dropdown lists in the search container */
     #searchContainer select {
     padding: 5px;
     }
 
-  /* Стили для кнопок поиска, просмотра доступности и сброса фильтров */
+  /*Styles for Search Buttons, View Availability, and Reset Filters */
     #searchButton, #availabilityButton, #resetButton {
     padding: 8px 12px;
     margin-left: 10px;
     }
 
-  /* Стили для кнопки просмотра доступности */
+  /* Styles for the accessibility view button */
 #availabilityButton {
     background-color: #4CAF50;
     color: white;
     border: none;
     }
 
-  /* Стили для кнопки сброса фильтров */
+  /* Styles for the filter reset button */
     #resetButton {
     background-color: #f44336;
     color: white;
