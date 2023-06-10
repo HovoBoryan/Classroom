@@ -1,47 +1,47 @@
 // script.js
-// Создаем таблицу
+// Creat a table
 var table = document.getElementById('timeTable');
 
-// Создаем заголовочную строку с днями недели
+//Create a header line with the days of the week
 var headerRow = document.createElement('tr');
 
-// Создаем пустую ячейку в левом верхнем углу
+// Create an empty cell in the upper left corner
 var emptyHeaderCell = document.createElement('th');
 headerRow.appendChild(emptyHeaderCell);
 
-// Добавляем заголовочную строку в таблицу
+// Adding a header row to a table
 table.appendChild(headerRow);
 
-// Создаем 26 строк со значениями времени
+// Create 26 rows with time values
 var currentTime = new Date();
-currentTime.setHours(10, 30, 0); // Начальное время 10:30
+currentTime.setHours(10, 30, 0); //Start time 10:30
 
 for (var i = 0; i < 26; i++) {
-  // Создаем строку таблицы
+  // Create a table row
   var row = document.createElement('tr');
 
-  // Создаем ячейку таблицы с текущим временем
+  // Create a table cell with the current time
   var timeCell = document.createElement('th');
   timeCell.textContent = currentTime.getHours() + ':' + (currentTime.getMinutes() < 10 ? '0' : '') + currentTime.getMinutes();
 
-  // Добавляем ячейку с временем в строку
+  // Adding a cell with time to a string
   row.appendChild(timeCell);
 
-  // Добавляем ячейки для каждого дня недели
+  // Add cells for each day of the week
   for (var j = 0; j < 7; j++) {
     var dayCell = document.createElement('td');
-    // Здесь можно добавить дополнительную логику для заполнения ячеек значениями, если необходимо
+    // add additional logic to populate cells with values ?????????
     row.appendChild(dayCell);
   }
 
-  // Добавляем строку в таблицу
+  // Adding a row to a table
   table.appendChild(row);
 
-  // Увеличиваем текущее время на 30 минут
+  // increase the current time by 30 minutes
   currentTime.setMinutes(currentTime.getMinutes() + 30);
 }
 
-// Добавленный код для поиска и фильтрации
+// Added search and filter code
 
 var searchInput = document.getElementById('searchInput');
 var searchButton = document.getElementById('searchButton');
@@ -77,7 +77,7 @@ searchButton.addEventListener('click', function() {
 });
 
 seeAvailabilityButton.addEventListener('click', function() {
-  // Дополнительная логика для отображения доступности временных слотов
+  // logic to display timeslot availability
 });
 
 resetFiltersButton.addEventListener('click', function() {
