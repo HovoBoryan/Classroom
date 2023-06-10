@@ -14,7 +14,7 @@ table.appendChild(headerRow);
 
 // Create 26 rows with time values
 let currentTime = new Date();
-currentTime.setHours(10, 30, 0); //Start time 10:30
+currentTime.setHours(10, 00, 0); //Start time 10:00
 
 for (let i = 0; i < 26; i++) {
   // Create a table row
