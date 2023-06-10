@@ -5,10 +5,6 @@ let table = document.getElementById('timeTable');
 //Create a header line with the days of the week
 let headerRow = document.createElement('tr');
 
-// Create an empty cell in the upper left corner
-let emptyHeaderCell = document.createElement('th');
-headerRow.appendChild(emptyHeaderCell);
-
 // Adding a header row to a table
 table.appendChild(headerRow);
 
